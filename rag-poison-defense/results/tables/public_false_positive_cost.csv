@@ -1,0 +1,5 @@
+scanner,scenario,clean_test_n,false_positives,clean_fpr,flagged_per_10k,review_minutes,reviewer_hours_per_10k,labor_cost_per_hour,legitimate_block_loss,expected_cost_per_10k
+D1_rules,base,505,0,0.0,0.0,4.0,0.0,45.0,2.0,0.0
+D2_TFIDF,base,505,3,0.005940594059405941,59.40594059405941,4.0,3.960396039603961,45.0,2.0,297.029702970297
+D3_provenance,base,505,0,0.0,0.0,4.0,0.0,45.0,2.0,0.0
+D4_quarantine,base,505,0,0.0,0.0,4.0,0.0,45.0,2.0,0.0

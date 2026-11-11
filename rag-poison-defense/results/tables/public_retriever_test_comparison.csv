@@ -1,0 +1,6 @@
+embedder,bipia_test_queries,clean_test_queries,selected_on_dev,bipia_test_recall_at_1,bipia_test_recall_at_1_ci95_low,bipia_test_recall_at_1_ci95_high,bipia_test_recall_at_5,bipia_test_recall_at_5_ci95_low,bipia_test_recall_at_5_ci95_high,bipia_test_recall_at_20,bipia_test_recall_at_20_ci95_low,bipia_test_recall_at_20_ci95_high,clean_test_recall_at_5
+hashing,125,413,False,0.0,0.0,0.029815393708326456,0.0,0.0,0.029815393708326456,0.008,0.0,0.024,0.6029055690072639
+tfidf,125,413,False,0.0,0.0,0.029815393708326456,0.08,0.032,0.128,0.288,0.208,0.376,0.5907990314769975
+tfidf_char,125,413,False,0.0,0.0,0.029815393708326456,0.0,0.0,0.029815393708326456,0.0,0.0,0.029815393708326456,0.6585956416464891
+bm25,125,413,True,0.096,0.048,0.152,0.432,0.344,0.512,0.624,0.536,0.704,0.9806295399515739
+hybrid,125,413,False,0.024,0.0,0.056,0.208,0.144,0.28,0.392,0.304,0.48,0.9055690072639225

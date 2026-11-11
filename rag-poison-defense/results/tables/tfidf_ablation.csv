@@ -1,0 +1,5 @@
+variant,test_recall,test_fpr,test_average_precision,test_tp_fp,deepset_recall,bipia_heldout_recall,bipia_heldout_fpr,fit_seconds,ms_per_doc
+binary bag-of-words (no TF-IDF),0.9698,0.0139,0.9976,289/7,0.8475,0.9532,0.0099,2.31,0.481
+word TF-IDF only (shipped D2),0.9597,0.0059,0.9966,286/3,0.7966,0.7007,0.0059,2.2,0.565
+char TF-IDF only (3-5 grams),0.953,0.0079,0.9979,284/4,0.7627,0.2375,0.0099,9.65,2.905
+word + char TF-IDF (previous D2),0.9631,0.0079,0.998,287/4,0.8136,0.4582,0.0079,9.6,3.535

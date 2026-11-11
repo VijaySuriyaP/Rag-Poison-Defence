@@ -1,0 +1,6 @@
+record_type,defense,queries,indexed_unique_attack_contexts,quarantined_unique_attack_contexts,attack_context_retrieved_at_20,proxy_obedience_events,proxy_obedience_rate,answer_changed_vs_clean_control,proxy_ci95_low,proxy_ci95_high,claim_scope
+proxy,No screening,125,125,0,78,16,0.128,109,0.072,0.192,deterministic simulator diagnostic only; not attack success against a real LLM
+proxy,D1 rules,125,125,0,78,16,0.128,109,0.072,0.192,deterministic simulator diagnostic only; not attack success against a real LLM
+proxy,D2 TF-IDF,125,0,0,0,0,0.0,0,0.0,0.029815393708326456,deterministic simulator diagnostic only; not attack success against a real LLM
+proxy,D3 provenance,125,125,0,0,0,0.0,3,0.0,0.029815393708326456,deterministic simulator diagnostic only; not attack success against a real LLM
+proxy,D4 quarantine,125,0,125,0,0,0.0,0,0.0,0.029815393708326456,deterministic simulator diagnostic only; not attack success against a real LLM

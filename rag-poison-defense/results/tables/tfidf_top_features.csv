@@ -1,0 +1,41 @@
+direction,feature,weight
+injection,you,3.298
+injection,your,2.908
+injection,access,2.113
+injection,if,1.983
+injection,granted,1.761
+injection,access granted,1.714
+injection,say,1.676
+injection,mercury,1.54
+injection,instructions,1.466
+injection,you are,1.451
+injection,any,1.388
+injection,user,1.321
+injection,code,1.151
+injection,write,1.149
+injection,date,1.132
+injection,ignore,1.117
+injection,reply,1.1
+injection,00,1.086
+injection,the user,1.082
+injection,redacted_access_code,1.028
+injection,print,1.023
+injection,are,1.01
+injection,david,0.994
+injection,will,0.98
+injection,do,0.975
+benign,district,-0.725
+benign,football,-0.729
+benign,at,-0.75
+benign,at the,-0.759
+benign,players,-0.77
+benign,also,-0.778
+benign,of the,-0.8
+benign,his,-0.804
+benign,people,-0.811
+benign,was,-0.925
+benign,he,-0.941
+benign,in the,-1.111
+benign,of,-1.139
+benign,in,-1.213
+benign,references,-1.447

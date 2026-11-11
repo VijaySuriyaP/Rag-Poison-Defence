@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "created_utc": "2026-11-03T03:40:54+00:00",
+  "dataset_sources": {
+    "wikipedia": {
+      "id": "wikimedia/wikipedia",
+      "config": "20231101.en",
+      "license": "CC-BY-SA-3.0/GFDL"
+    },
+    "deepset": {
+      "id": "deepset/prompt-injections",
+      "license": "Apache-2.0"
+    },
+    "bipia": {
+      "id": "geodesic-research/bipia",
+      "license": "CC-BY-SA-4.0"
+    },
+    "tensor_trust": {
+      "id": "qxcv/tensor-trust",
+      "license": "See upstream dataset terms; no license metadata in mirror card"
+    },
+    "squad": {
+      "id": "rajpurkar/squad",
+      "config": "plain_text",
+      "license": "CC-BY-SA-4.0"
+    }
+  },
+  "counts": {
+    "wikipedia_clean": 2000,
+    "attack_examples": 1463,
+    "benign_examples": 2399,
+    "bipia_questions": 600,
+    "squad_clean_qa_questions": 1200,
+    "squad_clean_contexts": 941,
+    "attacks_by_source": {
+      "deepset": 263,
+      "bipia": 600,
+      "tensor_trust": 600
+    },
+    "benign_by_source": {
+      "deepset-benign": 399,
+      "wikipedia": 2000
+    }
+  },
+  "squad_upstream_splits": {
+    "qa_source_split": "validation",
+    "sampled_questions": 1200
+  },
+  "split_rows": {
+    "attacks": {
+      "test": 298,
+      "train": 900,
+      "dev": 265
+    },
+    "benign": {
+      "test": 505,
+      "train": 1390,
+      "dev": 504
+    },
+    "wikipedia": {
+      "dev": 427,
+      "test": 413,
+      "train": 1160
+    }
+  },
+  "split_policy": "60/20/20 deterministic SHA-256 split by normalized document content; duplicate texts share a split",
+  "notes": [
+    "All documents, attacks, and QA questions originate from listed public datasets.",
+    "Tensor Trust access_code fields are excluded and any occurrences in prompt text are redacted.",
+    "SQuAD validation QA and its gold Wikipedia paragraphs are stored separately from scanner training data.",
+    "No local synthetic corpus, generated attack, or synthetic-data fallback is used."
+  ]
+}

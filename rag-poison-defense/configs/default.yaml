@@ -1,0 +1,41 @@
+seed: 42
+corpus:
+  size: 2000
+  chunk_size: 480
+  chunk_overlap: 80
+retrieval:
+  top_k: 5
+  embedder: bm25
+victim:
+  mode: simulated
+  obey_prob: 0.70
+  encoded_obey_factor: 0.45
+  seed: 42
+poison_rates: [0.001, 0.005, 0.01, 0.05]
+scanner:
+  t_review: 0.35
+  t_block: 0.75
+  threshold_t0: 0.80
+  threshold_t1: 0.70
+  threshold_t2: 0.55
+  threshold_t3: 0.35
+provenance:
+  hmac_env: RAGDEF_HMAC_KEY
+  default_key: local-research-demo-key-not-for-production
+  allowed_domains: [wikipedia.org, example.org]
+review:
+  minutes_per_doc: 4.0
+  accuracy: 0.92
+cost:
+  cost_per_review_hour: 45.0
+  cost_per_incident: 2500.0
+  cost_per_legit_block: 2.0
+  docs_per_day: 10000
+experiments:
+  bootstrap_samples: 500
+public_datasets:
+  deepset: deepset/prompt-injections
+  bipia: geodesic-research/bipia
+  tensor_trust: qxcv/tensor-trust
+  wikipedia: wikimedia/wikipedia
+  attack_rows_per_source: 600

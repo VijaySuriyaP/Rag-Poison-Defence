@@ -1,0 +1,3 @@
+scanner,threshold,dev_recall,dev_fpr,dev_precision,fpr_target,dev_fpr_by_benign_source,constrained_benign_sources
+D1_rules,0.6639999999999999,0.37358490566037733,0.003968253968253968,0.9801980198019802,0.05,"{'deepset': 0.025974025974025976, 'wikipedia': 0.0}","['deepset', 'wikipedia']"
+D2_TFIDF,0.4775504974212426,0.9735849056603774,0.005952380952380952,0.9885057471264368,0.05,"{'deepset': 0.03896103896103896, 'wikipedia': 0.0}","['deepset', 'wikipedia']"

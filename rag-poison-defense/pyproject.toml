@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-poison-defense"
+version = "0.1.0"
+description = "Public-data defensive research on poisoned RAG ingestion"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "PyYAML>=6", "scikit-learn>=1.2", "joblib>=1.2", "datasets>=3,<5", "matplotlib>=3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4", "pandas>=2", "scipy>=1.10"]
+rag = ["sentence-transformers>=3.0", "faiss-cpu>=1.8"]
+transformers = ["transformers>=4.40", "torch>=2.2"]
+notebook = ["nbformat>=5.9", "nbconvert>=7", "ipykernel>=6", "pandas>=2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
